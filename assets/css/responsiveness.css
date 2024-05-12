@@ -1,0 +1,19 @@
+@media (max-width: 425px) {
+    :root {
+        --my-width: 300px;
+    }
+    
+    .blank_area {
+        display: none;
+    }
+}
+
+@media (max-with: 320px) {
+    :root {
+        --my-width: 100%;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+}

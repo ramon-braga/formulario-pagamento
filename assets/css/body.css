@@ -1,0 +1,89 @@
+:root {
+    --my-width: 600px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    min-width: var(--my-width);
+    padding: 120px 20px 30px 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #ddd;
+    position: relative;
+}
+
+form {
+    display: flex;
+}
+
+.title {
+    background-color: #00a2ff;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: lighter;
+    padding: 10px 4px 10px 40px;
+    text-align: left;
+    position: absolute;
+    top: 30px;
+    left: -10px;
+    right: calc(var(--my-width) / 2);
+}
+
+form table {
+    flex: 1;
+}
+
+.blank_area {
+    flex: 1;
+}
+
+.blank_area img {
+    max-width: 300px;
+}
+
+.month_cvv {
+    display: flex;
+}
+
+.month_cvv input {
+    flex: 1;
+}
+
+.cvv {
+    margin-left: 3px;
+}
+
+input {
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+form button {
+    width: 100%;
+    padding: 4px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    color: #444;
+    background-color: #2fabe9;
+    color: white;
+    transition: all 0.2s;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: #00a2ff;
+    color: white;
+}

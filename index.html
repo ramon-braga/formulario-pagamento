@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Checkout</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="container">
+            <form action="">
+            
+                <table>
+                    <tr>
+                        <td>
+                            <h1 class="title">detalhes de pagamento</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Nome no cartão" title="Insira o nome como está no cartão" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="number" placeholder="Cartão de crédito" title="Insira o número do cartão" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="16" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="month_cvv">
+                            <input type="number" id="MMAA" name="MM/AA" min="0" max="9999" placeholder="MM/AA" title="Insira o mês e o ano de vencimento" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="4" required>   
+                        
+                            <input class="cvv" type="number" id="cvv" name="cvv" min="0" max="999" placeholder="CVV" title="Insira o código de três dígitos do cartão" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="3" required>
+                        </td>      
+                    </tr>
+                    <tr>
+                        <td>
+                            <button>Prosseguir</button>
+                        </td>
+                    </tr>
+                </table>
+                <div class="blank_area">
+                    <img src="assets/image/img3.png" alt="">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        Copyright © Ramon Braga
+    </footer>
+</body>
+</html>
